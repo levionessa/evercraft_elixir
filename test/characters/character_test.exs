@@ -21,4 +21,12 @@ defmodule CharacterTest do
     assert Character.valid?(%Character{alignment: neutral})
     refute Character.valid?(%Character{alignment: "Pants!"})
   end
+
+  test "default ac is 10" do
+    assert %Character{}.ac == 10
+  end
+
+  test "default hp is 5" do
+    assert %Character{}.hp == 5
+  end
 end
