@@ -13,4 +13,7 @@ defmodule Character do
 
   validates :alignment, inclusion: [good, evil, neutral, nothing]
   defstruct name: maybe, alignment: maybe, ac: 10, hp: 5
+
+  def dead?(character),
+    do: character.hp <= 0
 end

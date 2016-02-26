@@ -35,4 +35,12 @@ defmodule CharacterTest do
   test "default hp is 5" do
     assert %Character{}.hp == 5
   end
+
+  test "character is dead at 0 hp" do
+    assert Character.dead?(%Character{hp: 0})
+  end
+
+  test "character is dead at < 0 hp" do
+    assert Character.dead?(%Character{hp: -1})
+  end
 end
