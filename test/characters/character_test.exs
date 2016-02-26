@@ -1,9 +1,10 @@
 defmodule CharacterTest do
   use ExUnit.Case
-  doctest Character
 
   import Algae.Maybe
   import Alignment
+
+  doctest Character
 
   test "character has name" do
     expected = "Nate"
