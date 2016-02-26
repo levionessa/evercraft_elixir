@@ -5,7 +5,7 @@ follow the requirements below, pairing and test driving your code of course, and
 
 This document and several sample projects can be found on-line at [https://github.com/walterg2/EverCraft-Kata](https://github.com/walterg2/EverCraft-Kata)
 
-May all your rolls be 20s.
+May all your rolls not be 1s.
 
 Guy Royse [@guyroyse](https://twitter.com/#!/guyroyse) and George Walters II [@walterg2](https://twitter.com/#!/walterg2)
 
@@ -88,7 +88,7 @@ As a character I want to accumulate experience points when I attack my enemies s
 As a character I want my experience points to increase my level and combat capabilities so that I can bring vengeance to my foes
 
 - Level defaults to 1
-- After 1000 experience points, the character gains a level 
+- After 1000 experience points, the character gains a level
     - 0 xp -> 1st Level
     - 1000 xp -> 2nd Level
     - 2000 xp -> 3rd Level
@@ -258,7 +258,7 @@ As an elf I want to be able to wear elven chain mail so that I can fit in with a
 
 - +5 to Armor Class
 - +8 to Armor Class if worn by an elf
-- +1 to attack if worn by an elf 
+- +1 to attack if worn by an elf
 
 ### Feature: Items
 
