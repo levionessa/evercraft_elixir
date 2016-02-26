@@ -1,5 +1,7 @@
 # The EverCraft Kata
 
+[![Build Status](https://travis-ci.org/niftyn8/evercraft_elixir.svg?branch=master)](https://travis-ci.org/niftyn8/evercraft_elixir)
+
 In this exercise, you will build out a domain model for a MMORPG called EverCraft for the company Blizzards of the Coast.  Just
 follow the requirements below, pairing and test driving your code of course, and have fun.
 
