@@ -37,7 +37,7 @@ defmodule EvercraftElixir.Mixfile do
     [
       {:dialyxir, "~> 0.3", only: [:dev]},
       {:algae, "~> 0.9.0"},
-      {:vex, git: "git@github.com:CargoSense/vex.git", tag: "v0.5.5"}
+      {:vex, git: "https://github.com/CargoSense/vex.git", tag: "v0.5.5"}
     ]
   end
 end
