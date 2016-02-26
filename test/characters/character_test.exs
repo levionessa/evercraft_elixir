@@ -6,7 +6,7 @@ defmodule CharacterTest do
 
   doctest Character
 
-  test "character has name" do
+  test "can get and set name" do
     expected = "Nate"
     %{just: name} = %Character{name: just(expected)}.name
     assert name == expected
@@ -16,7 +16,12 @@ defmodule CharacterTest do
     assert nothing() == %Character{}.name
   end
 
-  test "character alignment validation" do
+  test "can get and set alignment" do
+    alignment = %Character{alignment: good}.alignment
+    assert alignment == good
+  end
+
+  test "alignments are good, evil, and neutral" do
     assert Character.valid?(%Character{alignment: good})
     assert Character.valid?(%Character{alignment: evil})
     assert Character.valid?(%Character{alignment: neutral})
