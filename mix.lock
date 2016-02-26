@@ -1,4 +1,4 @@
 %{"algae": {:hex, :algae, "0.9.1"},
   "dialyxir": {:hex, :dialyxir, "0.3.3"},
   "quark": {:hex, :quark, "1.0.2"},
-  "vex": {:git, "git@github.com:CargoSense/vex.git", "811d5ac9ad5ec499aa650a92df7728b4ed7a3e35", [tag: "v0.5.5"]}}
+  "vex": {:git, "https://github.com/CargoSense/vex.git", "811d5ac9ad5ec499aa650a92df7728b4ed7a3e35", [tag: "v0.5.5"]}}
