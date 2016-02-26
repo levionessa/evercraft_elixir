@@ -3,6 +3,7 @@ defmodule CharacterTest do
   doctest Character
 
   import Algae.Maybe
+  import Alignment
 
   test "character has name" do
     expected = "Nate"
@@ -12,5 +13,12 @@ defmodule CharacterTest do
 
   test "character has a Maybe monad for a name" do
     assert nothing() == %Character{}.name
+  end
+
+  test "character alignment validation" do
+    assert Character.valid?(%Character{alignment: good})
+    assert Character.valid?(%Character{alignment: evil})
+    assert Character.valid?(%Character{alignment: neutral})
+    refute Character.valid?(%Character{alignment: "Pants!"})
   end
 end

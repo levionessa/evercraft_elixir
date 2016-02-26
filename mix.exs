@@ -8,7 +8,12 @@ defmodule EvercraftElixir.Mixfile do
       elixir: "~> 1.1",
       build_embedded: Mix.env == :prod,
       start_permanent: Mix.env == :prod,
-      deps: deps
+      deps: deps,
+      dialyzer: [
+        paths: [
+          "_build/dev/lib/algae/ebin/"
+        ]
+      ]
     ]
   end
 
@@ -31,7 +36,8 @@ defmodule EvercraftElixir.Mixfile do
   defp deps do
     [
       {:dialyxir, "~> 0.3", only: [:dev]},
-      {:algae, "~> 0.9.0"}
+      {:algae, "~> 0.9.0"},
+      {:vex, git: "git@github.com:CargoSense/vex.git", tag: "v0.5.5"}
     ]
   end
 end
