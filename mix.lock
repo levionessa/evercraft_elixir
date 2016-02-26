@@ -1,0 +1,3 @@
+%{"algae": {:hex, :algae, "0.9.1"},
+  "dialyxir": {:hex, :dialyxir, "0.3.3"},
+  "quark": {:hex, :quark, "1.0.2"}}
